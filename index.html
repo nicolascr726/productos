@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calduladora</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-card">
+            <img src="assets/img/monitor-msi.png" alt="Monitor MSI Optix G24C">
+            <h2>
+                Monitor MSI Optix G24C
+            </h2>
+            <form action="">
+                <div class="product-container">
+                    <input class="text-input" id="quantity" type="text" placeholder="cantidad" autocomplete="off" required>
+                </div>
+                <div class="product-container">
+                    <input class="text-input" id="color" type="text" placeholder="color" autocomplete="off" required>
+                </div>
+            </form>
+            <p>Precio:<span id="price"></span></p>
+            <button onclick="total()">Calcular total</button>
+        </div>
+        <div class="amount-card">
+            <p id="amount-p">Total <span></span></p>
+            <p id="quantity-p">Cantidad <span></span></p>
+            <div class="color-box">
+                <p id="color-p">Color</p>
+                <div id="circle-color" class="circle-color"></div>
+            </div>
+        </div>
+    </div>
+    <script defer src="./assets/js/script.js"></script>
+</body>
+</html>
